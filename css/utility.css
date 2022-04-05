@@ -1,4 +1,76 @@
+/* Custom properties */
+:root {
+    /*color-values */
+    --clr-red: 11 75% 46%;
+    --clr-white: 0 0% 100%;
+    --clr-dark: 0 0% 0%;
+    --clr-fade: 0 0% 50%;
+
+    /* font families*/
+    --ff-sans: "Roboto", "Arial", "sans-serif";
+}
+
+/*Colors in context */
+.bg-red { background-color: hsl(var(--clr-red));}
+.bg-white { background-color: hsl(var(--clr-white));}
+
+.text-dark { color: hsl(var(--clr-dark));}
+.text-fade { color: hsl(var(--clr-fade));}
+
+/* typography in context */
+.ff-sans { font-family: var(--ff-sans);}
+
+.letter-spacing-1 { letter-spacing: 4.75px; }
+.letter-spacing-2 { letter-spacing: 2.7px; }
+.letter-spacing-3 { letter-spacing: 2.35px; }
+
+.uppercase { text-transform: uppercase; }
+
+
+
 .flex {
     display: flex;
     gap: var(--gap, 1rem);
+}
+
+.d-block {
+    display: block;
+}
+
+.grid {
+    display: block;
+    gap: var(--gap, 1rem);
+}
+
+.flow > *:where(:not(:first-child)){
+    margin-top: var(--flow-space, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 60rem;
+}
+
+.grid-container {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    padding-inline: 1rem;
+}
+
+.grid-container * {
+    max-width: 50ch;
+}
+
+/* hide element and allow screen reader alone */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
