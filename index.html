@@ -11,30 +11,30 @@
 </head>
 <body>
 
-    <header>
+    <header class="">
     <!-- Topbar -->
-    <img src="assets/icons/hamburger-menu.svg" alt="ham">
-    <div>
-        <img src="assets/icons/youtube-100.png" alt="youtube logo">
+    <section class="grid-container topbar-container">
+    <img class="icon" src="assets/icons/hamburger-menu.svg" alt="ham">
+    <div class="flex">
+        <img class="icon" src="assets/icons/youtube-100.png" alt="youtube logo">
         <span> YouTube </span>
     </div>
-    <div>
+    <div class="flex">
         <input type="text" placeholder="Search">
+        <img class="icon" src="assets/icons/search-30.png" alt="youtube logo">
     </div>
     <img src="assets/icons/microphone-32.png" alt="microphone">
-    <div>
+    <div class="flex">
         <img src="assets/icons/create-video-32.png" alt="create-video">
         <img src="assets/icons/menu-64.png" alt="menu">
         <img src="assets/icons/notification-50.png" alt="notifications">
-        <div>
-            <img src="assets/img/profile-pics.jpg" alt="profile-pics">
-        </div>
+        <img class="profile-image" src="assets/img/profile-pics.jpg" alt="profile-pics">
     </div>
-
+    </section>
 
 
     <!-- navigation bar -->
-    <section>
+    <section class="navigation">
         <div>
             <img src="assets/icons/home.svg" alt="">
             <span>Home</span>
@@ -42,104 +42,101 @@
     </section>
     </header>
 
-    <main>
-        video section 
-        <h1>Embeded videos and playlists</h1>
-        <span> unlisted </span>
-        <div>
-            <span> 361, 105 views </span>
-            <span> May 13, 2016 </span>
-            <span> 1.3k </span>
-            <span> Disklike </span>
-            <span> Share </span>
-            <span> save </span>
-            <img src="" alt="dot icon">
-        </div>
-        <div>
-            <img src="assets/icons/youtube-100.png" alt="youtube logo">
+    <div class="grid layout-container">
+        <main class="main-video">
+            <iframe width="900" height="415" src="https://www.youtube.com/embed/lJIrF4YjHfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1>Embeded videos and playlists</h1>
+            <span> unlisted </span>
+            <div>
+                <span> 361, 105 views </span>
+                <span> May 13, 2016 </span>
+                <span> 1.3k </span>
+                <span> Disklike </span>
+                <span> Share </span>
+                <span> save </span>
+                <img src="" alt="dot icon">
+            </div>
+            <div>
+                <img src="assets/icons/youtube-100.png" alt="youtube logo">
+
+                <div>
+                    <span>Youtube Viewers </span>
+                    <span> 9.04M subscribers </span>
+                    <p>To learn more please visit the YouTube Help Center https://www.youtube.com/help</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Sidebar Video Section-->
+        <section class="sidebar">
+            <div> <span>  All </span> <span> Recently uploaded</span> <span>  Watched </span> </div>
 
             <div>
-                <span>Youtube Viewers </span>
-                <span> 9.04M subscribers </span>
-                <p>To learn more please visit the YouTube Help Center https://www.youtube.com/help</p>
+                <img src="" alt="">
+                <h2>College Dropout Making $500k as a Software Engineer | Developer</h2>
+                <span>Bukola tick</span>
+                <span>511k views </span>
+                <span> 7 months ago </span>
             </div>
+        </section>
 
-        </div>
-    </main>
+        <!-- Comments Section -->
+        <section class="comments">
+            <span> 158 Comments </span>
+            <span> Sort by </span>
 
-    <!-- Sidebar Video Section-->
-    <section>
-        <div> <span>  All </span> <span> Recently uploaded</span> <span>  Watched </span> </div>
-
-        <div>
-            <img src="" alt="">
-            <h2>College Dropout Making $500k as a Software Engineer | Developer</h2>
-            <span>Bukola tick</span>
-            <span>511k views </span>
-            <span> 7 months ago </span>
-        </div>
-    </section>
-
-    <!-- Comments Section -->
-    <section>
-        <span> 158 Comments </span>
-        <span> Sort by </span>
-
-        <div>
             <div>
-                <img src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <img class="profile-image"  src="assets/img/profile-pics.jpg" alt="profile-pics">
+     
+                <input type="text" placeholder="Add a comment...">
             </div>
-            <input type="text" placeholder="Add a comment...">
-        </div>
 
-        <div>
             <div>
-                <img src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <img class="profile-image" src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <span>Web Cam</span>
+                <span> 5 years ago </span>
+                <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
+                <div> like icons 8 </div>
+                <div> dislike icons 9 </div>
+                <span>reply</span>
             </div>
-            <span>Web Cam</span>
-            <span> 5 years ago </span>
-            <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
-            <div> like icons 8 </div>
-            <div> dislike icons 9 </div>
-            <span>reply</span>
-        </div>
 
-        <div>
             <div>
-                <img src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <div>
+                    <img class="profile-image" src="assets/img/profile-pics.jpg" alt="profile-pics">
+                </div>
+                <span>Web Cam</span>
+                <span> 5 years ago </span>
+                <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
+                <div> like icons 8 </div>
+                <div> dislike icons 9 </div>
+                <span>reply</span>
             </div>
-            <span>Web Cam</span>
-            <span> 5 years ago </span>
-            <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
-            <div> like icons 8 </div>
-            <div> dislike icons 9 </div>
-            <span>reply</span>
-        </div>
 
-        <div>
             <div>
-                <img src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <div>
+                    <img class="profile-image" src="assets/img/profile-pics.jpg" alt="profile-pics">
+                </div>
+                <span>Web Cam</span>
+                <span> 5 years ago </span>
+                <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
+                <div> like icons 8 </div>
+                <div> dislike icons 9 </div>
+                <span>reply</span>
             </div>
-            <span>Web Cam</span>
-            <span> 5 years ago </span>
-            <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
-            <div> like icons 8 </div>
-            <div> dislike icons 9 </div>
-            <span>reply</span>
-        </div>
 
-        <div>
             <div>
-                <img src="assets/img/profile-pics.jpg" alt="profile-pics">
+                <div>
+                    <img class="profile-image" src="assets/img/profile-pics.jpg" alt="profile-pics">
+                </div>
+                <span>Web Cam</span>
+                <span> 5 years ago </span>
+                <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
+                <div> like icons 8 </div>
+                <div> dislike icons 9 </div>
+                <span>reply</span>
             </div>
-            <span>Web Cam</span>
-            <span> 5 years ago </span>
-            <p>Thank you for de-activating embed live video streaming without any notification! My visitors are suggesting that I'm the one who has determined that it has not Youtube itself! This is really ridiculous !!</p>
-            <div> like icons 8 </div>
-            <div> dislike icons 9 </div>
-            <span>reply</span>
-        </div>
-    </section>
-    
+        </section>
+    </div>
 </body>
 </html>

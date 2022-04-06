@@ -38,7 +38,7 @@
 }
 
 .grid {
-    display: block;
+    display: grid;
     gap: var(--gap, 1rem);
 }
 
