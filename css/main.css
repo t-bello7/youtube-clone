@@ -1,7 +1,7 @@
 .topbar-container{
     /* grid-template-columns: repeat(5, min-content); */
     grid-template-columns: min-content 1fr 1fr min-content 1fr;
-    background-color: red;
+    padding-bottom: 1px solid red;
     height: 4em;
 }
 
@@ -17,8 +17,30 @@
     object-fit:cover;
 }
 
+.nav-toggle{
+    display: block;
+    background: transparent;
+    background-image: url(../assets//icons/hamburger-menu.svg);
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+}
+
 .navigation {
     display: none;
+    width : 250px;
+    min-height: 100vh;
+    position: fixed;
+    background-color: red;
+    z-index: 9999;
+    top:0;
+    transform: translateX(0%);
+}
+
+.navigtion[data-visble="true"]{
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
 }
 
 .layout-container {

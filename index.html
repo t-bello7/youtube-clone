@@ -14,9 +14,10 @@
     <header class="">
     <!-- Topbar -->
     <section class="grid-container topbar-container">
-    <img class="icon" src="assets/icons/hamburger-menu.svg" alt="ham">
+    <button class="nav-toggle" aria-controls="navigation"> <span class="sr-only" aria-expanded="false">Menu</span></button>
+    <!-- <img class="icon " src="assets/icons/hamburger-menu.svg" alt="ham"> -->
     <div class="flex">
-        <img class="icon" src="assets/icons/youtube-100.png" alt="youtube logo">
+        <img class="icon" src="assets/icons/youtube-48.png" alt="youtube logo">
         <span> YouTube </span>
     </div>
     <div class="flex">
@@ -35,6 +36,8 @@
 
     <!-- navigation bar -->
     <section class="navigation">
+    <img class="icon nav-toggle" src="assets/icons/hamburger-menu.svg" alt="ham">
+
         <div>
             <img src="assets/icons/home.svg" alt="">
             <span>Home</span>
@@ -44,7 +47,7 @@
 
     <div class="grid layout-container">
         <main class="main-video">
-            <iframe width="900" height="415" src="https://www.youtube.com/embed/lJIrF4YjHfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1000" height="415" src="https://www.youtube.com/embed/lJIrF4YjHfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <h1>Embeded videos and playlists</h1>
             <span> unlisted </span>
             <div>
@@ -81,7 +84,7 @@
         </section>
 
         <!-- Comments Section -->
-        <section class="comments">
+        <section class="comments flow">
             <span> 158 Comments </span>
             <span> Sort by </span>
 
@@ -138,5 +141,7 @@
             </div>
         </section>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
